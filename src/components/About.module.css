@@ -1,0 +1,53 @@
+#about {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.buttons {
+    display: flex;
+    margin-top : 2rem ;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: normal ;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.linkedin {
+    background-color: black ;
+    color: white;
+    
+}
+
+.github {
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+
+
+
