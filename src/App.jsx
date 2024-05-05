@@ -1,6 +1,7 @@
 import './App.css'
 import About from './components/About'
 import Nav from './components/Nav'
+import Projects from './components/Projects'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <Nav />
       <About />
+      <Projects />
     </>
   )
 }
