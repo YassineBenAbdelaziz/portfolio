@@ -3,12 +3,8 @@
 /*
     Nav Styles
 */
-
-a {
-    color : black;
-    text-decoration : none ;
-    text-decoration-color: white ;
-    transition: all 300ms ease ;
+.container {
+    //height : 20vh ;
 }
 
 
@@ -27,14 +23,20 @@ nav {
 }
 
 
-li {
+.navItem {
     color : black;
     text-decoration: none;
     text-decoration-color: white ;
     cursor: pointer;
 }
+.navItem a {
+    color : black;
+    text-decoration : none ;
+    text-decoration-color: white ;
+    transition: all 300ms ease ;
+}
 
-li:hover {
+.navItem:hover {
     color : grey ;
     text-decoration: underline;
     text-underline-offset: 1rem;
@@ -89,7 +91,7 @@ li:hover {
 }
 
 
-span {
+.burgerLine {
     width: 100%;
     height : 2px ;
     background-color: black;

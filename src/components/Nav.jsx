@@ -15,17 +15,17 @@ const Nav = () => {
 
 
     return (
-        <>
+        <div className={styles.container} >
             <nav className={styles.desktopNav}>
                 <div className={`${styles.myname}`}>
                     Yassine Ben Abdelaziz
                 </div>
                 <div >
                     <ul className={`${styles.links}`} >
-                        <li className=""><a href="#about">About</a></li>
-                        <li className=""><a href="#projects">Projects</a></li>
-                        <li className=""><a href="#skills">Skills</a></li>
-                        <li className=""><a href="#contact">Contact</a></li>
+                        <li className={styles.navItem}><a href="#about">About</a></li>
+                        <li className={styles.navItem}><a href="#projects">Projects</a></li>
+                        <li className={styles.navItem}><a href="#skills">Skills</a></li>
+                        <li className={styles.navItem}><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -38,22 +38,22 @@ const Nav = () => {
                 </div>
                 <div className={ `${styles.hamburgerMenu}`}>
                     <div className={`${styles.hamburgerIcon} ${isOpen ? styles.hamburgerIconOpen : styles.hamburgerIconClosed}`} onClick={toggleMenu}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span className={styles.burgerLine}></span>
+                        <span className={styles.burgerLine}></span>
+                        <span className={styles.burgerLine}></span>
                     </div>
                     <div className={`${styles.menuLinks} ${isOpen ? styles.menuLinksOpen : ""}`}>
-                        <li className=""><a href="#about" onClick={toggleMenu}>About</a></li>
-                        <li className=""><a href="#projects" onClick={toggleMenu} >Projects</a></li>
-                        <li className=""><a href="#skills" onClick={toggleMenu}>Skills</a></li>
-                        <li className=""><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+                        <li className={styles.navItem}><a href="/" onClick={toggleMenu}>About</a></li>
+                        <li className={styles.navItem}><a href="/projects" onClick={toggleMenu} >Projects</a></li>
+                        <li className={styles.navItem}><a href="#skills" onClick={toggleMenu}>Skills</a></li>
+                        <li className={styles.navItem}><a href="#contact" onClick={toggleMenu}>Contact</a></li>
                     </div>
                 </div>
 
             </nav>
 
-
-        </>
+        </div>
+    
     );
 };
 
