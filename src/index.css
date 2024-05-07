@@ -6,11 +6,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 html ,body {
-  magrin: 0;
+  margin: 0;
   padding: 0;
   font-family : raleway, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
+  font-size: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 
+a {
+  color : black;
+  text-decoration : none ;
+  text-decoration-color: white ;
+  transition: all 300ms ease ;
+}
 

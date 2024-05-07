@@ -1,7 +1,8 @@
+import { Outlet } from 'react-router-dom'
 import './App.css'
-import About from './components/About'
+import Contact from './components/Contact'
 import Nav from './components/Nav'
-import Projects from './components/Projects'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -9,8 +10,8 @@ function App() {
   return (
     <>
       <Nav />
-      <About />
-      <Projects />
+      <Outlet />
+      <Footer />
     </>
   )
 }
