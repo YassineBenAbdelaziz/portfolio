@@ -1,6 +1,6 @@
 .footer {
-    padding-top : 4vh ;
     margin : 0 10rem ;
+    margin-top: 2rem;
     height :50vh;
     box-sizing: border-box;
     min-height: fit-content;
@@ -10,13 +10,13 @@
 }
 
 .title {
-    font-size: 1.8rem;
+    font-size: calc(1.2rem + 1vw);
     font-weight: 700;
     margin : 0;
 }
 
 .text {
-    font-size : 1.2rem ;
+    font-size : calc(0.9rem + 0.5vw);
     font-style : italic ;
     margin : 1rem 0 ;
     opacity : 0.8 ;

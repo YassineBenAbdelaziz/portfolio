@@ -9,8 +9,8 @@ const Contact = () => {
                 Do you have a job opportunity or an idea you want to discuss?
                 <br />
                 <br />
-                Feel free to reach out to me at <span className={styles.links}><a href="mailto:yassin.benabdellaziz@gmail.com" >yassin.benabdellaziz@gmail.com</a></span>.
-                You can also find me on  <span className={styles.links}><a href="">Linkedin</a></span> and <span className={styles.links}><a href="">Github</a></span>.
+                Feel free to reach out to me at <span className={styles.links}><a href="mailto:yassin.benabdellaziz@gmail.com" ><strong>yassin.benabdellaziz@gmail.com</strong></a></span>.
+                You can also find me on  <span className={styles.links}><a href=""><strong>Linkedin</strong></a></span> and <span className={styles.links}><a href=""><strong>Github</strong></a></span>.
 
             </p>
         </footer>

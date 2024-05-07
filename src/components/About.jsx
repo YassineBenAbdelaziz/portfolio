@@ -1,14 +1,13 @@
-import React , { useState} from 'react';
+import React  from 'react';
 import styles from './About.module.css';
 import { RoughNotation } from "react-rough-notation";
 
 const About = () => {
 
-    const [state, setState] = useState({ show: false });
 
     return (
         <section id="about" >
-
+            
             <h1 className={styles.title}>Hello, my name is Yassine.</h1>
             <h2 className={styles.subtitle}>
                 {/*I'm a full-stack web developer with a passion for creating beautiful and functional websites. */}

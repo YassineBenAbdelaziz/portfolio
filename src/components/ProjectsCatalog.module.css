@@ -26,14 +26,14 @@
     //color: rgb(85, 85, 85);
     color : black ;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: calc(1rem + 0.5vw);
     margin: 1rem;
 
 }
 
 .projectDesc{
     color: rgb(85, 85, 85);
-    font-size: 1.2rem;
+    font-size: calc(0.8rem + 0.5vw);
 }
 
 .details {

@@ -10,7 +10,7 @@ html ,body {
   padding: 0;
   font-family : raleway, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
-  font-size: 20px;
+  font-size: 1em;
 }
 
 html {
