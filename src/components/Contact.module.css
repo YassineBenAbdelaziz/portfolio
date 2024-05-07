@@ -17,24 +17,17 @@
 
 .text {
     font-size : calc(0.9rem + 0.5vw);
-    font-style : italic ;
     margin : 1rem 0 ;
     opacity : 0.8 ;
+    line-height: 1.5;
 
-}
-
-.links {
-    color : red ;
 }
 
 .links a { 
-    color : black;
+    //color : #06b6d4 ;
+    color : black ;
+    font-weight : 700 ;
     text-decoration : none ;
     text-decoration-color: white ;
     transition: all 300ms ease ;
-}
-
-.links a:hover {
-    text-decoration : underline ;
-    text-underline-offset : 0.5rem ;
 }

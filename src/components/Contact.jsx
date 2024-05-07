@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Contact.module.css';
+import { RoughNotation } from 'react-rough-notation';
 
 const Contact = () => {
     return (
@@ -7,10 +8,8 @@ const Contact = () => {
             <h1 className={styles.title}>Get in touch </h1>
             <p className={styles.text}>
                 Do you have a job opportunity or an idea you want to discuss?
-                <br />
-                <br />
-                Feel free to reach out to me at <span className={styles.links}><a href="mailto:yassin.benabdellaziz@gmail.com" ><strong>yassin.benabdellaziz@gmail.com</strong></a></span>.
-                You can also find me on  <span className={styles.links}><a href=""><strong>Linkedin</strong></a></span> and <span className={styles.links}><a href=""><strong>Github</strong></a></span>.
+                Feel free to reach out to me at <span className={styles.links}><a href="mailto:yassin.benabdellaziz@gmail.com" target="_blank" rel="noopener noreferrer" ><RoughNotation type='highlight' show={true} multiline={true} color='#fde047'>yassin.benabdellaziz@gmail.com</RoughNotation></a></span>.
+                You can also find me on  <span className={styles.links}><a href="https://www.linkedin.com/in/yassine-ben-abdelaziz/" target="_blank" rel="noopener noreferrer"><RoughNotation type='highlight' show={true} multiline={true} color='#06b6d4'>Linkedin</RoughNotation></a></span> and <span className={styles.links}><a href="https://github.com/YassineBenAbdelaziz" target="_blank" rel="noopener noreferrer"><RoughNotation type='highlight' show={true} multiline={true} color='#f87171'>Github.</RoughNotation></a></span>
 
             </p>
         </footer>
