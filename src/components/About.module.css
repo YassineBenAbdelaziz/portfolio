@@ -20,6 +20,9 @@
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: normal ;
+    opacity: 0.8;
+    font-style: italic;
+    line-height: 1.5;
 }
 
 .btn {
