@@ -1,0 +1,19 @@
+#skills {
+    display : flex ;
+    flex-direction: column;
+}
+/*
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+img {
+    width: 80px;
+    height: auto ;
+}
+*/
