@@ -9,6 +9,8 @@ section {
     flex-direction: column;
     height: 80vh;
     justify-content : center ;
+    gap : 2rem ;
+ 
 }
 
 #projects {
