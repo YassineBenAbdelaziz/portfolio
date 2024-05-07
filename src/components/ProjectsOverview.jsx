@@ -21,8 +21,10 @@ const ProjectsOverview = () => {
             <ProjectsCatalog number={4} />
 
             <a href="/projects" className={styles.more}>
-                More Projects
-                <span className={styles.arrow}> → </span>
+                <div className={styles.arrowContainer}>
+                    View all
+                    <span className={styles.arrow}> → </span>
+                </div>
             </a>
             
         </section>
