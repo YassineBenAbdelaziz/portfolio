@@ -24,3 +24,8 @@ section {
 .content {
     flex: 1 0 auto;
 }
+
+#loading {
+    text-align: center;
+    font-size: calc(1rem + 1vw);
+}
