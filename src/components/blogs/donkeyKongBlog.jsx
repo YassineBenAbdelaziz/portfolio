@@ -11,13 +11,13 @@ const content = (
         
         <h2 className={styles.sectionTitle}>Technologies</h2>
         <hr className={styles.divider} />
-        <p className={styles.sectionParagraph}>
+        <div className={styles.sectionParagraph}>
 
             <ul>
                 <li>Java</li>
                 <li>Java FX</li>
             </ul>
-        </p>
+        </div>
     </div>
 );
 

@@ -11,7 +11,7 @@ const content = (
         
         <h2 className={styles.sectionTitle}>Technologies</h2>
         <hr className={styles.divider} />
-        <p className={styles.sectionParagraph}>
+        <div className={styles.sectionParagraph}>
 
             <ul>
                 <li>Angular</li>
@@ -19,7 +19,7 @@ const content = (
                 <li>Node JS</li>
                 <li>Mongo DB</li>
             </ul>
-        </p>
+        </div>
     </div>
 );
 

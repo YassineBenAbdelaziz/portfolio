@@ -10,7 +10,7 @@ const content = (
 
         <h2 className={styles.sectionTitle}>Features</h2>
         <hr className={styles.divider} />
-        <p className={styles.sectionParagraph}>
+        <div className={styles.sectionParagraph}>
             <ul>
                 <li>Problems categorized by difficulty level and topic.</li>
                 <li>Scoring system with a leaderboard to encourage engagement. </li>
@@ -18,10 +18,10 @@ const content = (
                 <li>Online Code Editor</li>
                 
             </ul>
-        </p>
+        </div>
         <h2 className={styles.sectionTitle}>Technologies</h2>
         <hr className={styles.divider} />
-        <p className={styles.sectionParagraph}>
+        <div className={styles.sectionParagraph}>
 
             <ul>
                 <li>React</li>
@@ -31,7 +31,7 @@ const content = (
                 <li>Redis ( for in memory session database management )</li>
                 <li>Judge0 API </li>
             </ul>
-        </p>
+        </div>
     </div>
 );
 
