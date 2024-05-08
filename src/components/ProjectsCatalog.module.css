@@ -12,6 +12,7 @@
 
 .card {
     padding: 1px;
+    margin-bottom : 10px;
     flex: 0 0 calc(50% - 20px);
     background: white;
     text-align: center;
@@ -37,18 +38,18 @@
 }
 
 .details {
-    display: flex;
-    justify-content: space-around;
+
     font-weight: bold;
     margin-top: 1rem;
+
 }
 
 .details:hover {
     cursor: pointer;
     text-decoration: underline;
     text-underline-offset: 0.5rem;
-    transition: all 300ms ease;
-    transform: scale(1.05);
+    transition: all 300ms ease-in-out;
+    font-size: calc(0.8rem + 0.5vw);
 }
 
 
@@ -57,11 +58,17 @@
     height: auto ;
     border: rgb(53, 53, 53) 0.1rem solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 300ms ease-in-out;
 
 }
 
 .projectImage:hover {
     cursor: pointer;
     transform: scale(1.05);
-    transition: all 300ms ease;
+}
+
+
+.comingSoon {
+    font-style: italic;
+    
 }

@@ -11,8 +11,9 @@ const ProjectsCatalog = ({ number}) => {
         number = projects.length;
     }
 
-    const handleViewDetails = (title) => {
-        navigate(`/projects/${title}`);
+    const handleViewDetails = (title, notReady) => {
+        if (notReady === false) 
+            navigate(`/projects/${title}`);
     }
 
     return (
@@ -21,13 +22,15 @@ const ProjectsCatalog = ({ number}) => {
                 projects.slice(0,number).map((project) => {
                     return (
                         <div key={project.id} className={styles.card}>
-                            <img className={styles.projectImage} src={project.thumbnail} alt={project.title} />
+                            <img className={styles.projectImage} src={project.thumbnail} alt={project.title} onClick={() => handleViewDetails(project.title.replace(' ','').toLowerCase(),project?.isNotReady)}/>
                             <div className={styles.textContainer}>
                                 <h3 className={`${styles.projectName}`}>{project.title}</h3>
                                 <p className={`${styles.projectDesc}`}>{project.description}</p>
-                                <div className={styles.details} onClick={() => handleViewDetails(project.title.replace(' ','').toLowerCase())}>
+                                {project?.isNotReady === true  ?  <div className={styles.comingSoon}>Coming Soon !</div> : 
+                                <div className={styles.details} onClick={() => handleViewDetails(project.title.replace(' ','').toLowerCase(),project?.isNotReady)}>
                                     View Details
                                 </div>
+                                }
                             </div>
                         </div>
                     );
