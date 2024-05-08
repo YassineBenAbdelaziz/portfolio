@@ -1,33 +1,44 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './Nav.module.css';
-import { useLocation } from 'react-router-dom';
+import {  useLocation, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
-const Nav = () => {
+const Nav = ( { aboutRef, contactRef }) => {
 
     const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
+
+
+
+    const navigateTo = (path) => {
+        console.log(path);
+        navigate(path);
+    }
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
         console.log(isOpen);
     }
+ 
 
     const location = useLocation();
     const isHomePage = location.pathname === '/';
 
+
     return (
         <div className={styles.container} >
             <nav className={styles.desktopNav}>
-                <div className={`${styles.myname}`}>
+                <div className={`${styles.myname}`} onClick={()=> navigateTo('/')} >
                     Yassine Ben Abdelaziz
                 </div>
                 <div >
                     <ul className={`${styles.links}`} >
-                        <li className={styles.navItem}><a href={isHomePage ? "#about" : "/#about"}>About</a></li>
-                        <li className={styles.navItem}><a href={isHomePage ? "#projects" : "/#projects"}>Projects</a></li>
-                        <li className={styles.navItem}><a href="#skills">Skills</a></li>
-                        <li className={styles.navItem}><a href={isHomePage ? "#contact" : "/#contact"}>Contact</a></li>
+                        <li className={styles.navItem} ><Link to="/">Home</Link></li>
+                        <li className={styles.navItem} ><Link to="/#about">About</Link></li>
+                        <li className={styles.navItem} ><Link to="/projects">Projects</Link></li>
+                        <li className={styles.navItem} ><Link to="/#contact">Contact</Link></li>
                     </ul>
                 </div>
             </nav>

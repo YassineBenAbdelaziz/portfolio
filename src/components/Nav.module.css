@@ -45,7 +45,7 @@ nav {
 
 .myname {
     font-size: calc(1.5rem + 1vw);
-    cursor: default;
+    cursor: pointer;
 }
 
 
