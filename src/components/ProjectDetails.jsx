@@ -56,10 +56,10 @@ const ProjectDetails = () => {
     return (
 
         <section id={styles.projectDetails}>
-            <h1>
+            <h1 className={styles.title}>
                 {project.title}
             </h1>
-            <hr />
+            
             <Carousel 
             beforeChange={handleBeforeChange} 
             responsive={responsive} 
@@ -77,19 +77,21 @@ const ProjectDetails = () => {
                 }
             </Carousel>
 
-            {project?.github  && 
+            
             <div className={styles.buttons}>
+                { project?.github && 
                 <a href={project.github} target="_blank" rel="noopener noreferrer">
                     <button className={`${styles.btn} ${styles.github} `} disabled={project.github === undefined ? true : false }>
                         Github
                     </button>
-                </a>
-                <a href={project.demo} rel="noopener noreferrer">
+                </a>}
+                {project?.demo && 
+                <a href={project.demo} target="_blank" rel="noopener noreferrer">
                     <button className={`${styles.btn} ${styles.demo} `} disabled={project.demo === undefined ? true : false }>
                         Live Demo
                     </button>
-                </a>
-            </div> }
+                </a>}
+            </div> 
 
             <Blog content={project.blog} />
 
