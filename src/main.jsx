@@ -5,6 +5,7 @@ import Home from './components/Home.jsx'
 import Projects from './components/Projects.jsx'
 import ProjectDetails from './components/ProjectDetails.jsx'
 import Contact from './components/Contact.jsx'
+import NotFound from './components/NotFound.jsx'
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 import './index.css'
 
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path : "/contact",
         element : <Contact />
+      },
+      {
+        path : "*",
+        element : <NotFound />
       }
       
     ]

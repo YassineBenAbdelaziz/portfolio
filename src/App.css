@@ -20,3 +20,7 @@ section {
     justify-content: center;
     height : auto;
 }
+
+.content {
+    flex: 1 0 auto;
+}

@@ -17,6 +17,12 @@ html {
   scroll-behavior: smooth;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
 
 a {
   color : black;
@@ -25,3 +31,7 @@ a {
   transition: all 300ms ease ;
 }
 
+.not-found {
+  text-align: center;
+  font-weight: 600;
+}

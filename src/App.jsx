@@ -10,7 +10,9 @@ function App() {
   return (
     <>
       <Nav />
-      <Outlet />
+      <div className="content">
+        <Outlet />
+      </div>
       <Footer />
     </>
   )
