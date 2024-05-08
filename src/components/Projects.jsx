@@ -5,7 +5,7 @@ import ProjectsCatalog from './ProjectsCatalog';
 const Projects = () => {
     return (
         <section className={styles.projects}>
-            <h1>Projects</h1>
+            <h1 className={styles.title}>Projects</h1>
             <ProjectsCatalog  />
         </section>
     );

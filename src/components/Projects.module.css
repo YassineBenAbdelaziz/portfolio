@@ -4,3 +4,9 @@
     justify-content: center;
     height : auto;
 }
+
+.title {
+    font-size: calc(1.3rem + 1vw);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
