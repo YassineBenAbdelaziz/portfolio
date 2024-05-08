@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './ProjectsOverview.module.css';
 import ProjectsCatalog from './ProjectsCatalog';
+import { Link } from 'react-router-dom';
 
 const ProjectsOverview = () => {
 
@@ -19,13 +20,13 @@ const ProjectsOverview = () => {
             </div>
 
             <ProjectsCatalog number={4} />
-
-            <a href="/projects" className={styles.more}>
+            
+            <Link to="/projects" className={styles.more}>
                 <div className={styles.arrowContainer}>
                     View all
                     <span className={styles.arrow}> → </span>
                 </div>
-            </a>
+            </Link>
             
         </section>
     );
