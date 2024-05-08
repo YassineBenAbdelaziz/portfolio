@@ -1,0 +1,19 @@
+.sectionTitle {
+    font-size: calc(1.2rem + 1vw);
+    margin : 0 ;
+}
+
+.sectionParagraph {
+    font-size: calc(0.8rem + 0.5vw);
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.divider {
+    opacity: 0.5;
+}
+
+.links {
+    text-decoration: none;
+    color : blue ;
+}
