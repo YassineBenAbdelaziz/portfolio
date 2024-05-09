@@ -2,12 +2,33 @@ import cpc from '../assets/projects/cpcplatform.png';
 import enicarLearning from '../assets/projects/enicarLearning.png';
 import donkeykong from '../assets/projects/donkeykong.png';
 import streamVibe from '../assets/projects/streamvibe.png';
+import cpc1 from '../assets/projects/cpc1.png';
+import cpc2 from '../assets/projects/cpc2.png';
+import cpc3 from '../assets/projects/cpc3.png';
+import cpc4 from '../assets/projects/cpc4.png';
+import cpc5 from '../assets/projects/cpc5.png';
+import cpc6 from '../assets/projects/cpc6.png';
+import enicarLearning1 from '../assets/projects/enicarlearning1.jpeg';
+import enicarLearning2 from '../assets/projects/enicarlearning2.jpeg';
+import enicarLearning3 from '../assets/projects/enicarlearning3.jpeg';
+import enicarLearning4 from '../assets/projects/enicarlearning4.jpeg';
+import donkeyKongVideo from '../assets/projects/donkeykong.mp4';
+import mesaVerde from '../assets/projects/mesaverde.png';
+import mesaVerde1 from '../assets/projects/mesaverde1.png';
+import mesaVerde2 from '../assets/projects/mesaverde2.png';
+
+import sketchBoard from '../assets/projects/sketchboard.png';
+import sketchBoard1 from '../assets/projects/sketchboard1.png';
+import rockPaperScissors from '../assets/projects/rps.png';
+import rockPaperScissors1 from '../assets/projects/rps1.png';
+
 import cpcPlatformBlog from './blogs/cpcPlatformBlog';
 import donkeyKongBlog from './blogs/donkeyKongBlog';
 import mesaVerdeBlog from './blogs/mesaVerdeBlog';
 import sketchBoardBlog from './blogs/sketchBoardBlog';
 import rockPaperScissorsBlog from './blogs/rockPaperScissorsBlog';
 import enicarLearningBlog from './blogs/enicarLearningBlog';
+
 let projects =  [
     {
         id: 1,
@@ -21,27 +42,27 @@ let projects =  [
             },
             {
                 type : 'image',
-                media : '/src/assets/projects/cpc1.png',
+                media : cpc1,
             },
             {   
                 type : 'image',
-                media : '/src/assets/projects/cpc2.png',
+                media : cpc2,
             },
             {
                 type : 'image',
-                media : '/src/assets/projects/cpc3.png',
+                media : cpc3,
             },
             {
                 type : 'image',
-                media : '/src/assets/projects/cpc4.png',
+                media : cpc4,
             },
             {
                 type : 'image',
-                media : '/src/assets/projects/cpc5.png',
+                media : cpc5,
             },
             {
                 type : 'image',
-                media : '/src/assets/projects/cpc6.png',
+                media : cpc6,
             }
 
         ],
@@ -62,19 +83,19 @@ let projects =  [
             },
             {
                 type : 'image',
-                media : '/src/assets/projects/enicarlearning1.jpeg',
+                media : enicarLearning1,
             },
             {
                 type : 'image',
-                media : '/src/assets/projects/enicarlearning2.jpeg',
+                media : enicarLearning2,
             },
             {
                 type : 'image',
-                media : '/src/assets/projects/enicarlearning3.jpeg',
+                media : enicarLearning3,
             },
             {
                 type : 'image',
-                media : '/src/assets/projects/enicarlearning4.jpeg',
+                media : enicarLearning4,
             },
         ],
         github: "https://github.com/jebalirami7/Spring-Project",
@@ -94,7 +115,7 @@ let projects =  [
             },
             {
                 type : 'video',
-                media : '/src/assets/projects/donkeykong.mp4',
+                media : donkeyKongVideo,
             }
         ],
         github : "https://github.com/jebalirami7/Classic-Donkey-Kong",
@@ -117,24 +138,24 @@ let projects =  [
         id : 5 ,
         title : 'Mesa Verde Bank',
         description : 'Customer Complaint Management System',
-        thumbnail : '/src/assets/projects/mesaverde.png',
+        thumbnail : mesaVerde,
         carousel : [
             {
                 type : 'image',
-                media : '/src/assets/projects/mesaverde.png',
+                media : mesaVerde,
             },
             {
                 type : 'image',
-                media : '/src/assets/projects/mesaverde1.png',
+                media : mesaVerde1,
             },
             {
                 type : 'image',
-                media : '/src/assets/projects/mesaverde2.png',
+                media : mesaVerde2,
             },
             {
                 type : 'video',
-                media : 'https://private-user-images.githubusercontent.com/138411253/306386952-a5f08b26-c3e7-4254-b9a1-5207f44d318d.webm?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTUxOTI4NjYsIm5iZiI6MTcxNTE5MjU2NiwicGF0aCI6Ii8xMzg0MTEyNTMvMzA2Mzg2OTUyLWE1ZjA4YjI2LWMzZTctNDI1NC1iOWExLTUyMDdmNDRkMzE4ZC53ZWJtP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDUwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA1MDhUMTgyMjQ2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ODFmY2IyYzBiNDlmMjVjZDFhZmZkODk1NDYxODdkZjgzNTU1YTFjMDk0MjRjNWVlYmQwYTQ2NDU4ZDMxNGQ5YiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.wHwFFGCulQ7ey-iT0NBZIkqZH0TX3Cf1RIYslvC_ZcM',
-            },
+                media: 'https://github.com/jebalirami7/mesa-verde-bank/assets/138411253/a5f08b26-c3e7-4254-b9a1-5207f44d318d'
+            }
 
         ],
         github : 'https://github.com/YassineBenAbdelaziz/mesa-verde-bank',
@@ -146,15 +167,15 @@ let projects =  [
         id: 6,
         title: 'Sketch Board',
         description: 'A drawing application',
-        thumbnail: '/src/assets/projects/sketchboard.png',
+        thumbnail: sketchBoard,
         carousel : [
             {
                 type : 'image',
-                media : '/src/assets/projects/sketchboard.png',
+                media : sketchBoard,
             }, 
             {
                 type : 'image',
-                media : '/src/assets/projects/sketchboard1.png',
+                media : sketchBoard1,
             }
         ],
         github : "https://github.com/YassineBenAbdelaziz/sketch-board",
@@ -166,15 +187,15 @@ let projects =  [
         id: 7,
         title: 'Rock Paper Scissors',
         description: 'Rock Paper Scissors game',
-        thumbnail: '/src/assets/projects/rps.png',
+        thumbnail: rockPaperScissors,
         carousel : [
             {
                 type : 'image',
-                media : '/src/assets/projects/rps.png',
+                media : rockPaperScissors,
             },
             {
                 type : 'image',
-                media : '/src/assets/projects/rps1.png',
+                media : rockPaperScissors1,
             }
         ],
         github : "https://github.com/YassineBenAbdelaziz/rock-paper-scissors",
