@@ -72,3 +72,11 @@
     font-style: italic;
     
 }
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex: 0 0 calc(100% - 20px);
+    }
+
+
+}

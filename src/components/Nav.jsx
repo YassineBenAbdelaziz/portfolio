@@ -13,13 +13,11 @@ const Nav = ( { aboutRef, contactRef }) => {
 
 
     const navigateTo = (path) => {
-        console.log(path);
         navigate(path);
     }
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
-        console.log(isOpen);
     }
  
 
@@ -56,10 +54,10 @@ const Nav = ( { aboutRef, contactRef }) => {
                         <span className={styles.burgerLine}></span>
                     </div>
                     <div className={`${styles.menuLinks} ${isOpen ? styles.menuLinksOpen : ""}`}>
-                        <li className={styles.navItem}><a href={isHomePage ? "#about" : "/#about"} onClick={toggleMenu}>About</a></li>
-                        <li className={styles.navItem}><a href={isHomePage ? "#projects" : "/#projects"} onClick={toggleMenu} >Projects</a></li>
-                        <li className={styles.navItem}><a href="#skills" onClick={toggleMenu}>Skills</a></li>
-                        <li className={styles.navItem}><a href={isHomePage ? "#contact" : "/#contact"} onClick={toggleMenu}>Contact</a></li>
+                        <li className={styles.navItem}><Link to="/" onClick={toggleMenu}>Home</Link></li>
+                        <li className={styles.navItem} ><Link to="/#about" onClick={toggleMenu}>About</Link></li>
+                        <li className={styles.navItem} ><Link to="/projects" onClick={toggleMenu}>Projects</Link></li>
+                        <li className={styles.navItem} ><Link to="/#contact" onClick={toggleMenu}>Contact</Link></li>
                     </div>
                 </div>
 

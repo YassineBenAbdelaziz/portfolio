@@ -9,6 +9,18 @@
     justify-content : center ;
 }
 
+@media screen and (max-width: 768px) {
+    .footer {
+        margin : 0 5% ;
+    }
+    .title {
+        text-align: center;
+    }
+    .text {
+        text-align: justify;
+    }
+}
+
 .title {
     font-size: calc(1.2rem + 1vw);
     font-weight: 700;

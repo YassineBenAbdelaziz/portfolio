@@ -17,3 +17,10 @@
     text-decoration: none;
     color : blue ;
 }
+
+@media screen and (max-width: 768px) {
+    .sectionParagraph {
+        text-align: justify;
+        line-height: 1.5;
+    }
+}
