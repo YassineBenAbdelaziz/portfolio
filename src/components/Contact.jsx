@@ -7,9 +7,9 @@ const Contact = () => {
     const [imagesLoaded, setImagesLoaded] = useState(false);
 
     useEffect(() => {
-        window.onload = () => {
+        setTimeout(() => {
             setImagesLoaded(true);
-        };
+        }, 2000);
     }, []);
 
 
