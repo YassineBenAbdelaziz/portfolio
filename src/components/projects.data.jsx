@@ -82,6 +82,10 @@ let projects =  [
                 media : enicarLearning,
             },
             {
+                type : 'video',
+                media : "https://github.com/jebalirami7/Spring-Project/assets/138411253/13594200-b23d-4202-b7f2-14c11e5ccfc8",
+            },
+            {
                 type : 'image',
                 media : enicarLearning1,
             },
