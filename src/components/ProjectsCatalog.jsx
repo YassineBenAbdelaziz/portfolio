@@ -24,7 +24,11 @@ const ProjectsCatalog = ({ number}) => {
                         <div key={project.id} className={styles.card}>
                             <img className={styles.projectImage} src={project.thumbnail} alt={project.title} onClick={() => handleViewDetails(project.title.replace(' ','').toLowerCase(),project?.isNotReady)}/>
                             <div className={styles.textContainer}>
-                                <h3 className={`${styles.projectName}`}>{project.title}</h3>
+                                <h3 className={`${styles.projectName}`}>{project.title}
+                                    <span>
+                                { project.isUnderDevelopment && <span className={styles.underDevelopment}> (Work In Progress)</span>}
+                                    </span>
+                                </h3>
                                 <p className={`${styles.projectDesc}`}>{project.description}</p>
                                 {project?.isNotReady === true  ?  <div className={styles.comingSoon}>Coming Soon !</div> : 
                                 <div className={styles.details} onClick={() => handleViewDetails(project.title.replace(' ','').toLowerCase(),project?.isNotReady)}>

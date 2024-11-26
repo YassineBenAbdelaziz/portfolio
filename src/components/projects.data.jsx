@@ -1,7 +1,7 @@
 import cpc from '../assets/projects/cpcplatform.png';
 import enicarLearning from '../assets/projects/enicarLearning.png';
 import donkeykong from '../assets/projects/donkeykong.png';
-import streamVibe from '../assets/projects/streamvibe.png';
+import pos from '../assets/projects/pos.png';
 import cpc1 from '../assets/projects/cpc1.png';
 import cpc2 from '../assets/projects/cpc2.png';
 import cpc3 from '../assets/projects/cpc3.png';
@@ -28,6 +28,7 @@ import mesaVerdeBlog from './blogs/mesaVerdeBlog';
 import sketchBoardBlog from './blogs/sketchBoardBlog';
 import rockPaperScissorsBlog from './blogs/rockPaperScissorsBlog';
 import enicarLearningBlog from './blogs/enicarLearningBlog';
+import posBlog from './blogs/posBlog';
 
 let projects =  [
     {
@@ -70,9 +71,24 @@ let projects =  [
         demo : undefined,
         blog : cpcPlatformBlog,
         isNotReady : false,
+        isUnderDevelopment : false,
     },
     {
         id: 2,
+        title: 'Point of Sale',
+        description: 'Point of Sale System for retail stores',
+        thumbnail: pos,
+        carousel : [
+
+        ],
+        github : "https://github.com/YassineBenAbdelaziz/point-of-sale-system",
+        demo : undefined,
+        blog : posBlog,
+        isNotReady : false,
+        isUnderDevelopment : true,
+    },
+    {
+        id: 3,
         title: 'Enicar Learning',
         description: 'Elearning platform for Enicarthage',
         thumbnail: enicarLearning,
@@ -106,9 +122,10 @@ let projects =  [
         demo : undefined ,
         blog : enicarLearningBlog,
         isNotReady : false,
+        isUnderDevelopment : false,
     },
     {
-        id: 3,
+        id: 4,
         title: 'Donkey Kong',
         description: '2D Donkey Kong built with Java',
         thumbnail: donkeykong,
@@ -126,17 +143,7 @@ let projects =  [
         demo : undefined,
         blog : donkeyKongBlog,
         isNotReady : false,
-    },
-    {
-        id: 4,
-        title: 'StreamVibe',
-        description: 'Movies and Tv Series Streaming website',
-        thumbnail: streamVibe,
-        carousel : [],
-        github : undefined,
-        demo : undefined,
-        blog : undefined,
-        isNotReady : true,
+        isUnderDevelopment : false,
     },
     {
         id : 5 ,
@@ -166,6 +173,7 @@ let projects =  [
         demo : 'https://webproject-pied.vercel.app',
         blog : mesaVerdeBlog,
         isNotReady : false,
+        isUnderDevelopment : false,
     },
     {
         id: 6,
@@ -186,6 +194,7 @@ let projects =  [
         demo : "https://yassinebenabdelaziz.github.io/sketch-board/",
         blog : sketchBoardBlog,
         isNotReady : false,
+        isUnderDevelopment : false,
     },
     {
         id: 7,
@@ -206,6 +215,7 @@ let projects =  [
         demo : "https://yassinebenabdelaziz.github.io/rock-paper-scissors/",
         blog : rockPaperScissorsBlog,
         isNotReady : false,
+        isUnderDevelopment : false,
     }
 ];
 
